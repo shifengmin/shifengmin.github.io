@@ -241,6 +241,155 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://shifengmin.com/2017/03/14/Software-Testing-HW3/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Shi Fengmin">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="TJU::SFM">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="TJU::SFM" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/14/Software-Testing-HW3/" itemprop="url">
+                  Software Testing HW3
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-14T23:06:24+08:00">
+                2017-03-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/14/Software-Testing-HW3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/14/Software-Testing-HW3/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/03/14/Software-Testing-HW3/" class="leancloud_visitors" data-flag-title="Software Testing HW3">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Software-Testing-HW3"><a href="#Software-Testing-HW3" class="headerlink" title="Software Testing HW3"></a>Software Testing HW3</h1><h2 id="a"><a href="#a" class="headerlink" title="a."></a>a.</h2><p>Control Flow Diagram<br><img src="/images/STHW3.png" alt="Control Flow Diagram"></p>
+<h2 id="b"><a href="#b" class="headerlink" title="b."></a>b.</h2><p>Change the code in line 20 from:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> [] primes = <span class="keyword">new</span> <span class="keyword">int</span> [MAXPRIMES];</div></pre></td></tr></table></figure></p>
+<p>to:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> [] primes = <span class="keyword">new</span> <span class="keyword">int</span> [<span class="number">4</span>];</div></pre></td></tr></table></figure></p>
+<h2 id="c"><a href="#c" class="headerlink" title="c."></a>c.</h2><p>$$ n = 1 $$</p>
+<h2 id="d"><a href="#d" class="headerlink" title="d."></a>d.</h2><h3 id="Node-Coverage"><a href="#Node-Coverage" class="headerlink" title="Node Coverage"></a>Node Coverage</h3><p>$$ V={1,2,3,4,5,6,7,8,9,10,11} $$</p>
+<h3 id="Edge-Coverage"><a href="#Edge-Coverage" class="headerlink" title="Edge Coverage"></a>Edge Coverage</h3><p>$$ E={(1,2),(2,3),(2,8),(3,4),(3,6),(8,9),(6,7),(6,2),(4,5),(9,10),(9,11),(5,6),(7,2),(10, 9)} $$</p>
+<h3 id="Prime-Path-Coverage"><a href="#Prime-Path-Coverage" class="headerlink" title="Prime Path Coverage"></a>Prime Path Coverage</h3><p>$$ P = {(1,2,3,4),(1,2,3,4,5,6,7),(1,2,3,4,5,6),(1,2,8,9,10),(1,2,8,9,11)} $$</p>
+<h2 id="e"><a href="#e" class="headerlink" title="e."></a>e.</h2><h3 id="Code-being-tested"><a href="#Code-being-tested" class="headerlink" title="Code being tested"></a>Code being tested</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * Created by sfm on 17-3-14.</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintPrimes</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> MAXPRIMES = <span class="number">100000</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isDivisible</span><span class="params">(<span class="keyword">int</span> d, <span class="keyword">int</span> x)</span></span>&#123;</div><div class="line">        <span class="keyword">if</span>(x % d == <span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] printPrimes(<span class="keyword">int</span> n)&#123;</div><div class="line">        <span class="keyword">int</span> curPrime;</div><div class="line">        <span class="keyword">int</span> numPrimes;</div><div class="line">        <span class="keyword">boolean</span> isPrime;</div><div class="line">        <span class="keyword">int</span> [] primes = <span class="keyword">new</span> <span class="keyword">int</span> [MAXPRIMES];</div><div class="line"></div><div class="line">        primes[<span class="number">0</span>] = <span class="number">2</span>;</div><div class="line">        numPrimes = <span class="number">1</span>;</div><div class="line">        curPrime = <span class="number">2</span>;</div><div class="line">        <span class="keyword">while</span>(numPrimes&lt;n)&#123;</div><div class="line">            curPrime++;</div><div class="line">            isPrime = <span class="keyword">true</span>;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=numPrimes-<span class="number">1</span>;i++)&#123;</div><div class="line">                <span class="keyword">if</span>(isDivisible(primes[i],curPrime))&#123;</div><div class="line">                    isPrime = <span class="keyword">false</span>;</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span>(isPrime)&#123;</div><div class="line">                primes[numPrimes] = curPrime;</div><div class="line">                numPrimes++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;=numPrimes-<span class="number">1</span>;i++)&#123;</div><div class="line">            System.out.println(<span class="string">"Prime: "</span> + primes[i]);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> primes;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Code-for-testing"><a href="#Code-for-testing" class="headerlink" title="Code for testing"></a>Code for testing</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> org.junit.Test;</div><div class="line"><span class="keyword">import</span> org.junit.Before;</div><div class="line"><span class="keyword">import</span> org.junit.After;</div><div class="line"><span class="keyword">import</span> org.junit.runner.RunWith;</div><div class="line"><span class="keyword">import</span> org.junit.runners.Parameterized;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">import</span> java.util.Collection;</div><div class="line"></div><div class="line"><span class="keyword">import</span> <span class="keyword">static</span> org.junit.Assert.assertArrayEquals;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"> * PrintPrimes Tester.</div><div class="line"> *</div><div class="line"> * <span class="doctag">@author</span> &lt;Authors name&gt;</div><div class="line"> * <span class="doctag">@since</span> &lt;pre&gt;Mar 14, 2017&lt;/pre&gt;</div><div class="line"> * <span class="doctag">@version</span> 1.0</div><div class="line"> */</div><div class="line"></div><div class="line"><span class="meta">@RunWith</span>(Parameterized.class)</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintPrimesTest</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> <span class="keyword">int</span> n;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] expected = <span class="keyword">null</span>;</div><div class="line">    <span class="keyword">private</span> PrintPrimes proc = <span class="keyword">null</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">PrintPrimesTest</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> [] expected)</span></span>&#123;</div><div class="line">        <span class="keyword">this</span>.n = n;</div><div class="line">        <span class="keyword">this</span>.expected = expected;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Before</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">before</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        proc = <span class="keyword">new</span> PrintPrimes();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@After</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">after</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    <span class="meta">@Parameterized</span>.Parameters</div><div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Collection&lt;Object[]&gt; getData()&#123;</div><div class="line">        <span class="keyword">return</span> Arrays.asList(<span class="keyword">new</span> Object[][]&#123;</div><div class="line">                &#123;<span class="number">1</span>, <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>&#125;&#125;,</div><div class="line">                &#123;<span class="number">2</span>, <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>,<span class="number">3</span>&#125;&#125;,</div><div class="line">                &#123;<span class="number">5</span>, <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">11</span>&#125;&#125;</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     *</div><div class="line">     * Method: printPrimes(int n)</div><div class="line">     *</div><div class="line">     */</div><div class="line">    <span class="meta">@Test</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPrintPrimes</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line"><span class="comment">//<span class="doctag">TODO:</span> Test goes here...</span></div><div class="line">        assertArrayEquals(<span class="keyword">this</span>.expected,proc.printPrimes(n));</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     *</div><div class="line">     * Method: isDivisible(int d, int x)</div><div class="line">     *</div><div class="line">     */</div><div class="line">    <span class="meta">@Test</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testIsDivisible</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line"><span class="comment">//<span class="doctag">TODO:</span> Test goes here...</span></div><div class="line"><span class="comment">/*</span></div><div class="line">try &#123;</div><div class="line">   Method method = PrintPrimes.getClass().getMethod("isDivisible", int.class, int.class);</div><div class="line">   method.setAccessible(true);</div><div class="line">   method.invoke(&lt;Object&gt;, &lt;Parameters&gt;);</div><div class="line">&#125; catch(NoSuchMethodException e) &#123;</div><div class="line">&#125; catch(IllegalAccessException e) &#123;</div><div class="line">&#125; catch(InvocationTargetException e) &#123;</div><div class="line">&#125;</div><div class="line">*/</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h3><p><img src="/images/STHW3R.png" alt="Results"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://shifengmin.com/2017/03/13/Software-Testing-Lab1/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1017,7 +1166,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
