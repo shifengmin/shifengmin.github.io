@@ -1686,7 +1686,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd438;
+  background: #6ce216;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2849,4 +2849,8 @@ a.search-result {
   .post-body {
     text-align: justify;
   }
+}
+body {
+  background: url("/images/Simple-wallpaper-3.jpg");
+  background-attachment: fixed;
 }
