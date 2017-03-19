@@ -352,7 +352,7 @@
 <h2 id="几何意义"><a href="#几何意义" class="headerlink" title="几何意义"></a>几何意义</h2><p>从几何的角度来看， 感知机是一条直线(平面/超平面), 把$\bf x$所在的空间划分成两部分，落在一部分的点的$h$值为+1(在例子中就是发卡)， 在另一部分为-1 (不发卡)。 在给定已知点的情况下， 怎么确定能正确划分的平面呢？ 通过Perceptron Learning Algorithm (PLA) 可以找到</p>
 <h2 id="Perceptron-Learning-Algorithm"><a href="#Perceptron-Learning-Algorithm" class="headerlink" title="Perceptron Learning Algorithm"></a>Perceptron Learning Algorithm</h2><p>在课程中， 感知机学习算法被起了一个形象的名字叫“知错能改算法”，它的过程是这样的</p>
 <blockquote>
-<p>$\bf w=0$, 已知点集合为${({\bf x<em>0}, y_0),({\bf x_1},y_1),\cdots,({\bf x_n},y_n)}$<br>For $t = 1,2,\cdots$<br><strong>1    </strong> 找到 $y_n != sign({\bf w_t}^T{\bf x</em>{n(t)}})$ 的点（分错的点）<br><strong>2    </strong> 令 ${\bf w<em>{t+1}} \leftarrow {\bf w_t}+y_n{\bf x</em>{n(t)}} $ (尝试改错)<br>当没有错分点时返回最后的 ${\bf w}$</p>
+<p>$\bf w=0$, 已知点集合为 ${({\bf x<em>0}, y_0),({\bf x_1},y_1),\cdots,({\bf x_n},y_n)}$<br>For $t = 1,2,\cdots$<br><strong>1    </strong> 找到 $y_n != sign({\bf w_t}^T{\bf x</em>{n(t)}})$ 的点（分错的点）<br><strong>2    </strong> 令 ${\bf w<em>{t+1}} \leftarrow {\bf w_t}+y_n{\bf x</em>{n(t)}} $ (尝试改错)<br>当没有错分点时返回最后的 ${\bf w}$</p>
 </blockquote>
 <p>直观地看， 当错分点的$y$为1时， 此时的$w$与$x$的角度过大, 改错过程将角度“扳小”, $y$为-1时， 改错过程将过小的角度“扳大”， 这个算法似乎很有道理。 但我们还要考虑到， 每次更新时并没有考虑其他的点， 这类似于一个贪心策略，并不一定能找到全局最优的解， 对于PLA， 甚至不能保证“算法”会终止。 </p>
 <h2 id="PLA-的正确性和终止性"><a href="#PLA-的正确性和终止性" class="headerlink" title="PLA 的正确性和终止性"></a>PLA 的正确性和终止性</h2><h1 id="占坑待填"><a href="#占坑待填" class="headerlink" title="占坑待填"></a>占坑待填</h1>
