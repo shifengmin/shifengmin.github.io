@@ -87,7 +87,7 @@
 <meta property="og:description" content="在《基石》中， 林老师通过这样一个例子引出感知机(Perceptron)
 
 银行为对信用卡申请者进行信用审批，收集了申请人的年龄，年薪，负债数等数据，利用这些数据来判断应不应该发卡。一个很直接的想法是，对收集到的数据求一个加权平均值作为申请者的得分，当得分大于一个阈值(threshold)时就同意申请， 比如说， 我们比较信任年薪高的申请者，那就把年薪这一项的权重设置为一个正值， 我们不希望申请者">
-<meta property="og:updated_time" content="2017-03-21T01:09:21.043Z">
+<meta property="og:updated_time" content="2017-03-21T11:31:30.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Machine Learning Note - Perceptron">
 <meta name="twitter:description" content="在《基石》中， 林老师通过这样一个例子引出感知机(Perceptron)
@@ -361,14 +361,14 @@
 <script type="math/tex; mode=display">
 \begin{eqnarray}
 {\bf w_f^Tw_{t+1}}     &=&     {\bf w_f^T} ({\bf w_t} + y_{n(t)} {\bf x_{n(t)}}) \\\\
-                &\ge&    {\bf w_f^Tw_{t}}+ \min(y_n{\bf w_f^Tx_n}) \\\\
+        &\ge&    {\bf w_f^Tw_{t}}+ \min(y_n{\bf w_f^Tx_n}) \\\\
 \end{eqnarray}</script><p>这反应了随着纠错， 现有权重和理想权重的内积在增大， 这是由向量夹角和向量长度共同决定的， 于是我们再讨论$||{\bf w_t}||$的增长</p>
 <script type="math/tex; mode=display">
 \begin{eqnarray}
     ||{\bf w_{t+1}}||^2 &=& ||{\bf w_t} + y_{n(t)} {\bf x_{n(t)}}||^2 \\\\
                   &=& ||{\bf w_t} ||^2 + 2y_{n(t)}{\bf w_t^Tx_{n(t)}} + ||y_{n(t)} {\bf x_{n(t)}}||^2 \\\\
                         &\le& ||{\bf w_t} ||^2 + 0 + ||y_{n(t)} {\bf x_{n(t)}}||^2 \\\\
-                &\le& || {\bf w_t}||^2 + 0 +\max||{\bf x_n}||^2 \\\\
+    &\le& || {\bf w_t}||^2 + 0 +\max||{\bf x_n}||^2 \\\\
 \end{eqnarray}</script><p>设 $R^2 = \max||{\bf x_n}||^2$, $\rho = \min(y_n\frac{\bf w_f^T}{||\bf w_f||}{\bf x_n})$</p>
 <p>综上， 有</p>
 <script type="math/tex; mode=display">
@@ -379,7 +379,7 @@
 {\bf \frac{w_f^Tw_T}{||w_f||||w_T||}} &\ge& \sqrt{T}\frac{\rho}{R}
 \end{eqnarray}</script><p>因为不等式左边最大值为一， 所以PLA执行纠错次数上限为</p>
 <script type="math/tex; mode=display">\frac{R^2}{\rho^2}</script><h2 id="数据集线性不可分时的学习算法"><a href="#数据集线性不可分时的学习算法" class="headerlink" title="数据集线性不可分时的学习算法"></a>数据集线性不可分时的学习算法</h2><p>当数据集线性不可分时， 林老师介绍了一种Pocket Algorithm， 它的思想是在学习的过程中把所有的${\bf w}$记录下来， 迭代一定次数后选择误分类点最少的。</p>
-<h3 id="转化为二次优化问题"><a href="#转化为二次优化问题" class="headerlink" title="转化为二次优化问题"></a>转化为二次优化问题</h3><h1 id="占坑待填"><a href="#占坑待填" class="headerlink" title="占坑待填"></a>占坑待填</h1>
+
       
     </div>
 
@@ -580,7 +580,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#几何意义"><span class="nav-number">1.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Perceptron-Learning-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Perceptron Learning Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PLA-的终止性"><span class="nav-number">3.</span> <span class="nav-text">PLA 的终止性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据集线性不可分时的学习算法"><span class="nav-number">4.</span> <span class="nav-text">数据集线性不可分时的学习算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#转化为二次优化问题"><span class="nav-number">4.1.</span> <span class="nav-text">转化为二次优化问题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#占坑待填"><span class="nav-number"></span> <span class="nav-text">占坑待填</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#几何意义"><span class="nav-number">1.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Perceptron-Learning-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Perceptron Learning Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PLA-的终止性"><span class="nav-number">3.</span> <span class="nav-text">PLA 的终止性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据集线性不可分时的学习算法"><span class="nav-number">4.</span> <span class="nav-text">数据集线性不可分时的学习算法</span></a></li></ol></div>
             
 
           </div>

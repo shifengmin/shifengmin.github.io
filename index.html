@@ -358,14 +358,14 @@
 <script type="math/tex; mode=display">
 \begin{eqnarray}
 {\bf w_f^Tw_{t+1}}     &=&     {\bf w_f^T} ({\bf w_t} + y_{n(t)} {\bf x_{n(t)}}) \\\\
-                &\ge&    {\bf w_f^Tw_{t}}+ \min(y_n{\bf w_f^Tx_n}) \\\\
+        &\ge&    {\bf w_f^Tw_{t}}+ \min(y_n{\bf w_f^Tx_n}) \\\\
 \end{eqnarray}</script><p>这反应了随着纠错， 现有权重和理想权重的内积在增大， 这是由向量夹角和向量长度共同决定的， 于是我们再讨论$||{\bf w_t}||$的增长</p>
 <script type="math/tex; mode=display">
 \begin{eqnarray}
     ||{\bf w_{t+1}}||^2 &=& ||{\bf w_t} + y_{n(t)} {\bf x_{n(t)}}||^2 \\\\
                   &=& ||{\bf w_t} ||^2 + 2y_{n(t)}{\bf w_t^Tx_{n(t)}} + ||y_{n(t)} {\bf x_{n(t)}}||^2 \\\\
                         &\le& ||{\bf w_t} ||^2 + 0 + ||y_{n(t)} {\bf x_{n(t)}}||^2 \\\\
-                &\le& || {\bf w_t}||^2 + 0 +\max||{\bf x_n}||^2 \\\\
+    &\le& || {\bf w_t}||^2 + 0 +\max||{\bf x_n}||^2 \\\\
 \end{eqnarray}</script><p>设 $R^2 = \max||{\bf x_n}||^2$, $\rho = \min(y_n\frac{\bf w_f^T}{||\bf w_f||}{\bf x_n})$</p>
 <p>综上， 有</p>
 <script type="math/tex; mode=display">
@@ -376,7 +376,7 @@
 {\bf \frac{w_f^Tw_T}{||w_f||||w_T||}} &\ge& \sqrt{T}\frac{\rho}{R}
 \end{eqnarray}</script><p>因为不等式左边最大值为一， 所以PLA执行纠错次数上限为</p>
 <script type="math/tex; mode=display">\frac{R^2}{\rho^2}</script><h2 id="数据集线性不可分时的学习算法"><a href="#数据集线性不可分时的学习算法" class="headerlink" title="数据集线性不可分时的学习算法"></a>数据集线性不可分时的学习算法</h2><p>当数据集线性不可分时， 林老师介绍了一种Pocket Algorithm， 它的思想是在学习的过程中把所有的${\bf w}$记录下来， 迭代一定次数后选择误分类点最少的。</p>
-<h3 id="转化为二次优化问题"><a href="#转化为二次优化问题" class="headerlink" title="转化为二次优化问题"></a>转化为二次优化问题</h3><h1 id="占坑待填"><a href="#占坑待填" class="headerlink" title="占坑待填"></a>占坑待填</h1>
+
           
         
       
