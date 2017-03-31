@@ -345,9 +345,9 @@
             <h3 id="LeetCode-4"><a href="#LeetCode-4" class="headerlink" title="LeetCode 4"></a>LeetCode 4</h3><h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给两个长为N，M的有序数组，查询其中位数，要求时间复杂度为O(log(N+M))</p>
 <h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><p>长度为偶数时查询中位数需要查询两个数求平均值，比较麻烦，考虑新问题：在其中查询第K大数。 则原问题简化为查询一次(N+M 为奇数)或两次(N+M 为偶数) 第K大。 接下来使用分治法： 比较两段的中位数，分情况讨论哪些区间不用再考虑，比如：</p>
 <blockquote>
-<p>当$A_{mid} &lt; B_{mid}$且$ K&lt;|A_{1\cdotsmid}| $时， 两数组的后半段就不用考虑了<br>具体情况见代码， 要注意递归边界条件！！！！ 在这坑了好久</p>
+<p>当$A_{mid} &lt; B_{mid}$且$ K&lt;|A_{1\cdots mid}| $时， 两数组的后半段就不用考虑了<br>其他情况见代码， 要注意递归边界条件！！！！ 在这坑了好久</p>
 </blockquote>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code class="lang-c++">class Solution {
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code class="lang-cpp">class Solution {
 public:
     double findKthInArrs(int l1,int r1,int l2,int r2,int k,vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2){
         if(l1&gt;r1){
