@@ -61,7 +61,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="-Algorithm -LeetCode Hard -Divide and Conquer," />
 
 
 
@@ -77,12 +77,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="TJU::SFM">
-<meta property="og:url" content="http://shifengmin.com/categories/Tips/index.html">
+<meta name="description" content="LeetCode 4题意给两个长为N，M的有序数组，查询其中位数，要求时间复杂度为O(log(N+M))
+解法长度为偶数时查询中位数需要查询两个数求平均值，比较麻烦，考虑新问题：在其中查询第K大数。 则原问题简化为查询一次(N+M 为奇数)或两次(N+M 为偶数) 第K大。 接下来使用分治法： 比较两段的中位数，分情况讨论哪些区间不用再考虑，比如：
+
+当$A_{mid} &amp;lt; B_{mid}$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode 4">
+<meta property="og:url" content="http://shifengmin.com/2017/03/31/LeetCode-4/index.html">
 <meta property="og:site_name" content="TJU::SFM">
+<meta property="og:description" content="LeetCode 4题意给两个长为N，M的有序数组，查询其中位数，要求时间复杂度为O(log(N+M))
+解法长度为偶数时查询中位数需要查询两个数求平均值，比较麻烦，考虑新问题：在其中查询第K大数。 则原问题简化为查询一次(N+M 为奇数)或两次(N+M 为偶数) 第K大。 接下来使用分治法： 比较两段的中位数，分情况讨论哪些区间不用再考虑，比如：
+
+当$A_{mid} &amp;lt; B_{mid}$">
+<meta property="og:updated_time" content="2017-03-31T11:47:47.990Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TJU::SFM">
+<meta name="twitter:title" content="LeetCode 4">
+<meta name="twitter:description" content="LeetCode 4题意给两个长为N，M的有序数组，查询其中位数，要求时间复杂度为O(log(N+M))
+解法长度为偶数时查询中位数需要查询两个数求平均值，比较麻烦，考虑新问题：在其中查询第K大数。 则原问题简化为查询一次(N+M 为奇数)或两次(N+M 为偶数) 第K大。 接下来使用分治法： 比较两段的中位数，分情况讨论哪些区间不用再考虑，比如：
+
+当$A_{mid} &amp;lt; B_{mid}$">
 
 
 
@@ -110,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://shifengmin.com/categories/Tips/"/>
+  <link rel="canonical" href="http://shifengmin.com/2017/03/31/LeetCode-4/"/>
 
 
 
 
 
-  <title> 分类: Tips | TJU::SFM </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title> LeetCode 4 | TJU::SFM </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +150,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left  ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -229,47 +242,225 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        Tips
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/17/Hello-World-0/" itemprop="url">
-              
-                <span itemprop="name">在Hexo中插入公式</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-17T16:33:36+08:00"
-              content="2017-01-17" >
-          01-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://shifengmin.com/2017/03/31/LeetCode-4/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Shi Fengmin">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="TJU::SFM">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="TJU::SFM" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                LeetCode 4
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-31T19:30:03+08:00">
+                2017-03-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/31/LeetCode-4/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/31/LeetCode-4/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/03/31/LeetCode-4/" class="leancloud_visitors" data-flag-title="LeetCode 4">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="LeetCode-4"><a href="#LeetCode-4" class="headerlink" title="LeetCode 4"></a>LeetCode 4</h3><h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给两个长为N，M的有序数组，查询其中位数，要求时间复杂度为O(log(N+M))</p>
+<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><p>长度为偶数时查询中位数需要查询两个数求平均值，比较麻烦，考虑新问题：在其中查询第K大数。 则原问题简化为查询一次(N+M 为奇数)或两次(N+M 为偶数) 第K大。 接下来使用分治法： 比较两段的中位数，分情况讨论哪些区间不用再考虑，比如：</p>
+<blockquote>
+<p>当$A_{mid} &lt; B_{mid}$且$ K&lt;|A_{1\cdotsmid}| $时， 两数组的后半段就不用考虑了<br>具体情况见代码， 要注意递归边界条件！！！！ 在这坑了好久</p>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code class="lang-c++">class Solution {
+public:
+    double findKthInArrs(int l1,int r1,int l2,int r2,int k,vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2){
+        if(l1&gt;r1){
+            return nums2[l2+k-1];
+        }
+        if(l2&gt;r2){
+            return nums1[l1+k-1];
+        }
+        if(k==r1+r2-l1-l2+2) return max(nums1[r1],nums2[r2]);
+         if(k==1) return min(nums1[l1],nums2[l2]);
+         if(l1==r1){
+             if(nums1[r1] &gt;= nums2[l2+k-1]) return nums2[l2+k-1];
+             else if(nums1[r1] &gt;= nums2[l2+k-2]) return nums1[r1];
+             else return nums2[l2+k-2];
+        }
+        if(l2==r2){
+            if(nums2[r2] &gt;= nums1[l1+k-1]) return nums1[l1+k-1];
+            else if(nums2[r2] &gt;= nums1[l1+k-2]) return nums2[r2];
+            else return nums1[l1+k-2];
+        }
+         int m1 = l1+r1 &gt;&gt; 1;
+        int m2 = l2+r2 &gt;&gt; 1;
+        if(nums1[m1]&lt;=nums2[m2]){
+            if(k&lt;=m1-l1+1){
+                return findKthInArrs(l1,m1,l2,m2,k,nums1,nums2);
+            }else if(k&lt;=m1-l1+1+m2-l2+1){
+                return findKthInArrs(l1,r1,l2,m2,k,nums1,nums2);
+            }else{
+                return findKthInArrs(m1+1,r1,l2,r2,k-(m1-l1+1),nums1,nums2);
+            }
+        }else{
+            if(k&lt;=m2-l2+1){
+                return findKthInArrs(l1,m1,l2,m2,k,nums1,nums2);
+            }else if(k&lt;=m1-l1+1+m2-l2+1){
+                return findKthInArrs(l1,m1,l2,r2,k,nums1,nums2);
+            }else{
+                return findKthInArrs(l1,r1,m2+1,r2,k-(m2-l2+1),nums1,nums2);
+            }
+        }
+    }
+
+    double findMedianSortedArrays(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2) {
+        int n = nums1.size();
+        int m = nums2.size();
+        int L = n+m;
+        if(L&amp;1) return findKthInArrs(0,n-1,0,m-1,L/2+1,nums1,nums2);
+        else return (findKthInArrs(0,n-1,0,m-1,L/2+1,nums1,nums2)+findKthInArrs(0,n-1,0,m-1,L/2,nums1,nums2))*0.5;
+    }
+};
+</code></pre>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Algorithm-LeetCode-Hard-Divide-and-Conquer/" rel="tag"># -Algorithm -LeetCode Hard -Divide and Conquer</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/16/Machine-Learning-Note-1/" rel="next" title="Machine Learning Note - Perceptron">
+                <i class="fa fa-chevron-left"></i> Machine Learning Note - Perceptron
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -277,6 +468,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/31/LeetCode-4/"
+           data-title="LeetCode 4" data-url="http://shifengmin.com/2017/03/31/LeetCode-4/">
+      </div>
+    
+  </div>
+
 
 
         </div>
@@ -297,8 +496,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -391,6 +599,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#LeetCode-4"><span class="nav-number">1.</span> <span class="nav-text">LeetCode 4</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题意"><span class="nav-number"></span> <span class="nav-text">题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法"><span class="nav-number"></span> <span class="nav-text">解法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number"></span> <span class="nav-text">代码</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -514,6 +738,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
