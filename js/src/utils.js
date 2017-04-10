@@ -150,11 +150,11 @@ NexT.utils = NexT.$u = {
   },
 
   isTablet: function () {
-    return window.screen.width < 992 && window.screen.width > 767 && this.hasMobileUA();
+    return document.body.offsetWidth < 1100 && document.body.offsetWidth > 767;
   },
 
   isMobile: function () {
-    return window.screen.width < 767 && this.hasMobileUA();
+    return document.body.offsetWidth< 767;
   },
 
   isDesktop: function () {

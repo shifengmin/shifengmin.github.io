@@ -1,5 +1,18 @@
 /* global NexT: true */
 
+$(window).on('resize', function(){
+  var offsetWidth = document.body.offsetWidth;
+  console.log('haha');
+  if(offsetWidth < 1100){
+    $('.sidebar').css({'display': 'none'});
+    $('body').css({'padding-left': 0});
+  }
+  else{
+    $('.sidebar').css({'display': 'block'});
+    $('body').css({'padding-left': '320px'});
+  }
+});
+
 $(document).ready(function () {
   NexT.motion = {};
 
